@@ -19,5 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
       repos.innerText = json.public_repos;
       link.href = json.html_url;
       avatar.src = json.avatar_url;
+    })
+    .catch(function (erro) {
+      alert("Ocorreu um erro, tente novamente mais tarde.");
     });
 });
